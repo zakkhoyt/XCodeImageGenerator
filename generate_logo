@@ -33,6 +33,9 @@ rm -rf $OUTPUT_DIR > /dev/null
 mkdir $OUTPUT_DIR > /dev/null
 
 # Generate images
+# 8
+sips $1 -z 16 16 -o $OUTPUT_DIR/$2_8@2x$3.png > /dev/null
+sips $1 -z 8 8 -o $OUTPUT_DIR/$2_8$3.png > /dev/null
 # 16
 sips $1 -z 32 32 -o $OUTPUT_DIR/$2_16@2x$3.png > /dev/null
 sips $1 -z 16 16 -o $OUTPUT_DIR/$2_16$3.png > /dev/null
@@ -57,15 +60,33 @@ sips $1 -z 57 57 -o $OUTPUT_DIR/$2_57$3.png > /dev/null
 # 60
 sips $1 -z 120 120 -o $OUTPUT_DIR/$2_60@2x$3.png > /dev/null
 sips $1 -z 60 60 -o $OUTPUT_DIR/$2_60$3.png > /dev/null
+# 70
+sips $1 -z 140 140 -o $OUTPUT_DIR/$2_70@2x$3.png > /dev/null
+sips $1 -z 70 70 -o $OUTPUT_DIR/$2_70$3.png > /dev/null
 # 72
 sips $1 -z 144 144 -o $OUTPUT_DIR/$2_72@2x$3.png > /dev/null
 sips $1 -z 72 72 -o $OUTPUT_DIR/$2_72$3.png > /dev/null
 # 76
 sips $1 -z 152 152 -o $OUTPUT_DIR/$2_76@2x$3.png > /dev/null
 sips $1 -z 76 76 -o $OUTPUT_DIR/$2_76$3.png > /dev/null
+# 96
+sips $1 -z 192 192 -o $OUTPUT_DIR/$2_96@2x$3.png > /dev/null
+sips $1 -z 96 96 -o $OUTPUT_DIR/$2_96$3.png > /dev/null
+# 122
+sips $1 -z 244 244 -o $OUTPUT_DIR/$2_122@2x$3.png > /dev/null
+sips $1 -z 122 122 -o $OUTPUT_DIR/$2_122$3.png > /dev/null
 # 128
 sips $1 -z 256 256 -o $OUTPUT_DIR/$2_128@2x$3.png > /dev/null
 sips $1 -z 128 128 -o $OUTPUT_DIR/$2_128$3.png > /dev/null
+# 148
+sips $1 -z 296 296 -o $OUTPUT_DIR/$2_148@2x$3.png > /dev/null
+sips $1 -z 148 148 -o $OUTPUT_DIR/$2_148$3.png > /dev/null
+# 174
+sips $1 -z 348 348 -o $OUTPUT_DIR/$2_174@2x$3.png > /dev/null
+sips $1 -z 174 174 -o $OUTPUT_DIR/$2_174$3.png > /dev/null
+# 200
+sips $1 -z 400 400 -o $OUTPUT_DIR/$2_200@2x$3.png > /dev/null
+sips $1 -z 200 200 -o $OUTPUT_DIR/$2_200$3.png > /dev/null
 # 256
 sips $1 -z 512 512 -o $OUTPUT_DIR/$2_256@2x$3.png > /dev/null
 sips $1 -z 256 256 -o $OUTPUT_DIR/$2_256$3.png > /dev/null
