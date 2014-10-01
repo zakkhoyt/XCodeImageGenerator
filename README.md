@@ -1,9 +1,9 @@
 A couple of bash scrips that will take an input image and output all the various sizes that are required for iOS projects. 
 
-Source image should be at least 1024 pixels. 
+Source image should be at least 1024 pixels. This sample takea an image named logo_1024 and outputs the resized versions to a directory named logo. 
 
 ```bash
-Usage: generate_logo logo_1024.png
+Usage: generate_logo logo_1024.png logo
 Help: genearte_logo --help
 ```
 
