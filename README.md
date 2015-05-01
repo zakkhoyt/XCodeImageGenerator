@@ -3,14 +3,20 @@ A couple of bash scrips that will take an input image and output all the various
 Source image should be at least 1024 pixels. This sample takea an image named logo_1024 and outputs the resized versions to a directory named logo. 
 
 ```bash
-Usage: generate_logo logo_1024.png logo
-Help: genearte_logo --help
+Syntax: ./xcimage <input_image> <output_dir>
+Usage: ./xcimage logo_1024.png logo
+Help: ./.xcimage --help
 ```
 
 A sample session is run like this:
 
 ```
-iMac:test currentuser$ xcimage fireflower.png Icons
+./xcimage fireflower.png Icons
+```
+
+And will produce an output like this:
+
+```
 Processing icons....
 Resizing fireflower.png to Xcode sizes in directory Icons
 Created the following images in Icons
@@ -79,6 +85,7 @@ total 12312
 -rw-r--r--  1 currentuser  staff     9225 May  1 14:48 Icons_96.png
 -rw-r--r--  1 currentuser  staff    29173 May  1 14:48 Icons_96@2x.png
 -rw-r--r--  1 currentuser  staff    61973 May  1 14:48 Icons_96@3x.png
-iMac:test currentuser$ 
 ```
+
+It will then open Finder to your output directory
 
