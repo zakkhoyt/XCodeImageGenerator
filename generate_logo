@@ -35,7 +35,7 @@ mkdir $OUTPUT_DIR > /dev/null
 # Generate images
 # 8
 sips $1 -z 24 24 -o $OUTPUT_DIR/$2_8@3x$3.png > /dev/null
-sips $1 -z 16 16 -o $OUTPUT_DIR/$2_8@2x$3.png > /dev/null
+sips $1 -z 16 16  -o $OUTPUT_DIR/$2_8@2x$3.png > /dev/null
 sips $1 -z 8 8 -o $OUTPUT_DIR/$2_8$3.png > /dev/null
 # 16
 sips $1 -z 48 48 -o $OUTPUT_DIR/$2_16@3x$3.png > /dev/null
@@ -123,3 +123,6 @@ sips $1 -z 1024 1024 -o $OUTPUT_DIR/$2_1024$3.png > /dev/null
 # Show output to user
 echo Created the following images in $OUTPUT_DIR
 ls -l $OUTPUT_DIR
+
+# open dir in finder
+open $OUTPUT_DIR
