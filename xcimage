@@ -81,6 +81,10 @@ sips $1 -z 72 72 -o $OUTPUT_DIR/$2_72$3.png > /dev/null
 sips $1 -z 228 228 -o $OUTPUT_DIR/$2_76@3x$3.png > /dev/null
 sips $1 -z 152 152 -o $OUTPUT_DIR/$2_76@2x$3.png > /dev/null
 sips $1 -z 76 76 -o $OUTPUT_DIR/$2_76$3.png > /dev/null
+# 83.5
+sips $1 -z 250.5 250.5 -o $OUTPUT_DIR/$2_83.5@3x$3.png > /dev/null
+sips $1 -z 167 167 -o $OUTPUT_DIR/$2_83.5@2x$3.png > /dev/null
+sips $1 -z 83.5 83.5 -o $OUTPUT_DIR/$2_83.5$3.png > /dev/null
 # 96
 sips $1 -z 288 288 -o $OUTPUT_DIR/$2_96@3x$3.png > /dev/null
 sips $1 -z 192 192 -o $OUTPUT_DIR/$2_96@2x$3.png > /dev/null
